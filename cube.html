@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Cube</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <p>This is the page for the Cube studio.</p>
-        </div>
-    </body>
+
+<head>
+    <title>Cube</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/x3dom.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type='text/javascript' src='./x3dom/x3dom.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <p>This is the page for the Cube studio.</p>
+        <x3d id="3d-container">
+            <scene>
+                <environment id="gamma" gammaCorrectionDefault="linear"></environment>
+
+
+                <navigationInfo 
+                    DEF='NavigationInfo1' 
+                    avatarSize='.25 1.6 .75' 
+                    visibilityLimit='100' 
+                    speed='0.2' 
+                    headlight='false' 
+                    type='"TURNTABLE" "ANY"'>
+                </navigationInfo>
+
+                <!-- <inline url="simpleVideoSphereDemo/Spout.x3d"></inline> -->
+                <inline url="Cube.x3d"></inline>
+            </scene>
+        </x3d>
+    </div>
+</body>
+
 </html>

@@ -1,1 +1,8 @@
 /* styles go here */
+#3d-container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
