@@ -1,4 +1,5 @@
 /* styles go here */
+
 #3d-container {
     position: absolute;
     top: 0px;
@@ -6,3 +7,92 @@
     right: 0px;
     left: 0px;
 }
+
+
+.headerImage{
+    background-color: white;
+}
+.group{
+    background-color:rgb(229, 225, 230);
+}
+@font-face{
+    font-family: gineso-condensed;
+    src: local("Gineso Cond Medium"),
+    url(GinesoCondMedium.otf);
+    font-weight: bold;
+}
+img{
+    width: 400px;
+  
+}
+
+.studioHeader .cubeTitle{
+    
+    width: 100%;
+    border: 5px solid rgb(117, 120, 123);
+    background-color:rgb(117, 120, 123);
+    padding: 10px;
+   
+    font-family: gineso-condensed;
+    color: white;
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+
+    
+    
+}
+
+div#project
+{
+  
+    border: 2px solid rgb(117, 120, 123);
+    background-color:rgb(117, 120, 123);
+    padding: 10px;
+   
+    top: 0;
+    left: 0;
+    width:600px;
+    height:350px;
+    overflow:hidden;     /* if you don't want a scrollbar, set to hidden */
+    overflow-x:hidden;   /* hides horizontal scrollbar on newer browsers */
+    margin-left: auto;
+    margin-right: auto;
+  
+
+}
+.projHeader{
+    width: 90%;
+    border: 5px solid white;
+    background-color: white;
+    margin: 20px;
+    color: rgb(232, 119, 34);
+    font-family: gineso-condensed;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+}
+h2{
+    color:rgb(134,31,65);
+    font-size: 24px;
+    border-bottom: 3px solid rgb(134,31,65);
+}
+iframe.proj
+{
+    width:1000px;      
+    height:6500px;     
+    margin-left:-100px; 
+    margin-right:-1000px;
+    
+
+    margin-top:-2650px;  
+    overflow:hidden;
+    
+    
+}
+

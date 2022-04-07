@@ -9,11 +9,34 @@
     <link rel="stylesheet" href="css/x3dom.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type='text/javascript' src='./x3dom/x3dom.js'></script>
+    <base target="_blank">
+
+    
 </head>
 
 <body>
+    <div class="headerImage">
+        <img src = "Horizontal_VT_Full_Color_RGB.jpg" alt="HTML5 Icon"> </img>
+
+    </div>
+   <div class="group">
     <div class="container">
-        <p>This is the page for the Cube studio.</p>
+        <div class="studioHeader">
+            <h1 class="cubeTitle">The Cube</h1>
+
+        </div>
+    
+        <div class= projHeader>
+            <h2>Current Projects</h2>
+            <p>To read more about a project right click on the project and open in a new tab.</p>
+        </div>
+         <div id="project">
+            
+            <iframe class="proj" src="https://icat.vt.edu/studios/the-cube.html"></iframe>
+        </div>
+        
+    </div>
+</div>
         <x3d id="3d-container">
             <scene>
                 <environment id="gamma" gammaCorrectionDefault="linear"></environment>
@@ -32,7 +55,8 @@
                 <inline url="Cube.x3d"></inline>
             </scene>
         </x3d>
-    </div>
+    
+    
 </body>
 
 </html>
