@@ -5,59 +5,53 @@
     <title>Cube</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/x3dom.css">
+    
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script type='text/javascript' src='./x3dom/x3dom.js'></script>
+    <!-- using API found here: https://pannellum.org/ -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    
+    <!-- 360 View -->
+    <link rel="stylesheet" href="css/360ViewerStyle.css">
+    <script type="module" src="./cube-360-view.js"></script>
+    
     <base target="_blank">
 
-    
+
 </head>
 
 <body>
     <div class="headerImage">
-        <img src = "Horizontal_VT_Full_Color_RGB.jpg" alt="HTML5 Icon"> </img>
+        <img src="Horizontal_VT_Full_Color_RGB.jpg" alt="HTML5 Icon"> </img>
 
     </div>
-   <div class="group">
-    <div class="container">
-        <div class="studioHeader">
-            <h1 class="cubeTitle">The Cube</h1>
+    <div class="group">
+        <div class="container">
+            <div class="studioHeader">
+                <h1 class="cubeTitle">The Cube</h1>
+
+            </div>
+
+            <div class=projHeader>
+                <h2>Current Projects</h2>
+                <p>To read more about a project right click on the project and open in a new tab.</p>
+            </div>
+            <div id="project">
+
+                <iframe class="proj" src="https://icat.vt.edu/studios/the-cube.html"></iframe>
+            </div>
 
         </div>
-    
-        <div class= projHeader>
-            <h2>Current Projects</h2>
-            <p>To read more about a project right click on the project and open in a new tab.</p>
-        </div>
-         <div id="project">
-            
-            <iframe class="proj" src="https://icat.vt.edu/studios/the-cube.html"></iframe>
-        </div>
-        
     </div>
-</div>
-        <!-- <p>This is the page for the Cube studio.</p> -->
-        <x3d id="3d-container">
-            <scene>
-                <environment id="gamma" gammaCorrectionDefault="linear"></environment>
+    <div id="viewer"></div>
 
 
-                <navigationInfo 
-                    DEF='NavigationInfo1' 
-                    avatarSize='.25 1.6 .75' 
-                    visibilityLimit='100' 
-                    speed='0.2' 
-                    headlight='false' 
-                    type='"TURNTABLE" "ANY"'>
-                </navigationInfo>
 
-                <!-- <inline url="simpleVideoSphereDemo/Spout.x3d"></inline> -->
-                <inline url="Cube.x3d"></inline>
-            </scene>
-        </x3d>
-    
-    
 </body>
 
 </html>
