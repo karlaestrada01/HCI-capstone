@@ -1,12 +1,15 @@
 #viewer {
-    position: fixed;
-    top: 0px;
+    position: absolute;
+    top: 500px;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    /* width: 100vw;
-    height: 100vh; */
+    /* width: 100vw;*/
+    height: 1000px;
     z-index: -1;
+}
+#viewer img {
+    width: 100%;
 }
 .custom-hotspot {
     height: 50px;

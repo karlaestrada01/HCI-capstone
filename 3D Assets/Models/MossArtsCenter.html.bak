@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html style='width:100%; height:100%; border:0; margin:0; padding:0;'>
+  <head>
+    <meta http-equiv='X-UA-Compatible' content='chrome=1'/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/x3dom/release/x3dom.css'/>
+    <script type='text/javascript' src='http://www.x3dom.org/x3dom/release/x3dom.js'></script>
+    <style>.x3dom-logContainer { bottom: 0px; position: absolute; }
+    </style>
+  </head>
+  <body style='width:100%; height:100%; border:0; margin:0; padding:0;'>
+    <div id='HUDs_Div'> 
+      <div id='X3DOM_AOPT_Links' class='group' style='margin:26px 2px 2px; padding:4px; background-color:rgba(199,202,204,.7); position:absolute; z-index:1000;'> 
+        <a href='http://www.x3dom.org'>X3DOM
+        </a> output created with 
+        <a href='http://www.instantreality.org'>InstantReality
+        </a> aopt tool. 
+      </div> 
+      <div id='Interaction_Toolbox' style='margin:2px; padding:4px 150px 4px 4px; background-color:rgba(199,202,204,.7); position:absolute; z-index:1000; right:0px; top:0px;'> 
+        <table> 
+          <tr> 
+            <td>Navigation Mode: 
+            </td> 
+            <td align='right'> 
+              <select style='float:right;' onchange='document.getElementById(&apos;x3dElement&apos;).runtime[value]();'> 
+                <option selected='selected' value='examine'>Examine 
+                </option> 
+                <option value='turnTable'>TurnTable 
+                </option> 
+                <option value='lookAt'>LookAt 
+                </option> 
+                <option value='lookAround'>LookAround 
+                </option> 
+                <option value='fly'>Fly 
+                </option> 
+                <option value='freeFly'>FreeFly 
+                </option> 
+                <option value='helicopter'>Helicopter 
+                </option> 
+                <option value='walk'>Walk 
+                </option>  
+                <option value='noNav'>None 
+                </option> 
+              </select> 
+            </td> 
+          </tr> 
+          <tr> 
+            <td>Debug Display: 
+            </td> 
+            <td align='right'> 
+              <input type='checkbox' onclick='document.getElementById(&apos;x3dElement&apos;).runtime.statistics(this.checked);'> 
+              </input> Stats 
+              <input type='checkbox' onclick='document.getElementById(&apos;x3dElement&apos;).runtime.debug();'> 
+              </input> Log 
+            </td> 
+          </tr> 
+          <tr> 
+            <td> 
+              <button onclick='document.getElementById(&apos;x3dElement&apos;).runtime.showAll();'> Show Everything 
+              </button> 
+            </td> 
+            <td> 
+              <button onclick='document.getElementById(&apos;x3dElement&apos;).runtime.resetView();'> Reset View 
+              </button> 
+            </td> 
+          </tr> 
+        </table> 
+      </div> 
+    </div>
+    <x3d id='x3dElement' showStat='false' showLog='false' style='width:100%; height:100%; border:0; margin:0; padding:0;'>
+      <scene>
+        <worldInfo info='"This Web3D Content was created with Vivaty Studio, a Web3D authoring tool" "www.mediamachines.com"' title='a0MossArtComposed2'></worldInfo>
+        <background DEF='WO_World' groundColor='0.05098 0.05098 0.05098' skyColor='0.2549 0.38431 0.41176'></background>
+        <navigationInfo avatarSize='0.25 1.75 0.75' type='"EXAMINE" "ANY"'></navigationInfo>
+        <transform DEF='dad_Light1' translation='12.4838 11.5339 0'>
+          <pointLight DEF='Light1' intensity='0.5'></pointLight>
+        </transform>
+        <transform DEF='cam_main_Interance_TRANSFORM' translation='14.9311 -2.6722 57.5121'>
+          <viewpoint DEF='CA_cam_main_Interance' description='CA_cam_main_Interance' position='0 0 0' fieldOfView='0.785'></viewpoint>
+        </transform>
+        <transform DEF='cam_centeralStairs_inside_TRANSFORM' translation='12.5763 -2.28119 35.1363'>
+          <viewpoint DEF='CA_cam_centeralStairs_inside' description='CA_cam_centeralStairs_inside' position='0 0 0' fieldOfView='0.785'></viewpoint>
+        </transform>
+        <transform DEF='cam_sandBox_hallWay_TRANSFORM' rotation='-0 1 0 1.571' translation='-7.60653 -2.41687 25.2213'>
+          <viewpoint DEF='CA_cam_sandBox_hallWay' description='CA_cam_sandBox_hallWay' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='0.95'></viewpoint>
+        </transform>
+        <transform DEF='cam_cube_Interance_TRANSFORM' translation='1.00297 -2.78357 65.963'>
+          <viewpoint DEF='CA_cam_cube_Interance' description='CA_cam_cube_Interance' position='0 0 0' fieldOfView='0.785'></viewpoint>
+        </transform>
+        <transform DEF='cam_PerformanceHall_interance_TRANSFORM' rotation='-0 1 0 1.571' translation='31.5007 -2.54506 40.7062'>
+          <viewpoint DEF='CA_cam_PerformanceHall_interance' description='CA_cam_PerformanceHall_interance' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='0.785'></viewpoint>
+        </transform>
+        <transform DEF='cam_PerformanceHallStairs_inside_TRANSFORM' translation='45.3513 -2.40208 46.819'>
+          <viewpoint DEF='CA_cam_PerformanceHallStairs_inside' description='CA_cam_PerformanceHallStairs_inside' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='0.785'></viewpoint>
+        </transform>
+        <transform DEF='cam_observationRoom_hallway_TRANSFORM' translation='0.98751 1.21741 -2.15636'>
+          <viewpoint DEF='CA_cam_observationRoom_hallway' description='CA_cam_observationRoom_hallway' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='1.24'></viewpoint>
+        </transform>
+        <transform DEF='cam_observationRoom_insideRoom_TRANSFORM' translation='3.17857 1.61072 2.00472'>
+          <viewpoint DEF='CA_cam_observationRoom_insideRoom' description='CA_cam_observationRoom_insideRoom' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='1.24'></viewpoint>
+        </transform>
+        <transform DEF='cam_learningLab_hallWay_TRANSFORM' rotation='0 1 0 3.142' translation='-1.94365 1.11897 -2.20677'>
+          <viewpoint DEF='CA_cam_learningLab_hallWay' description='CA_cam_learningLab_hallWay' position='0 0 0' fieldOfView='0.95'></viewpoint>
+        </transform>
+        <transform DEF='cam_learningLab_insideLab_TRANSFORM' translation='-9.55437 0.81944 1.60337'>
+          <viewpoint DEF='CA_cam_learningLab_insideLab' description='CA_cam_learningLab_insideLab' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='0.95'></viewpoint>
+        </transform>
+        <transform DEF='cam_performanceStudio_insideStudio_TRANSFORM' translation='0.98442 1.22702 -2.23428'>
+          <viewpoint DEF='CA_cam_performanceStudio_insideStudio' description='CA_cam_performanceStudio_insideStudio' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='0.95'></viewpoint>
+        </transform>
+        <transform DEF='cam_sandBox_insideSandBox_TRANSFORM' translation='0.66679 -1.96256 13.4751'>
+          <viewpoint DEF='CA_cam_sandBox_insideSandBox' description='CA_cam_sandBox_insideSandBox' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='0.95'></viewpoint>
+        </transform>
+        <transform DEF='cam_backInterance_TRANSFORM' translation='6.26939 1.0785 -25.3676'>
+          <viewpoint DEF='CA_cam_backInterance' description='CA_cam_backInterance' orientation='0 1 0 3.142' position='0 0 0' fieldOfView='0.95'></viewpoint>
+        </transform>
+        <inline DEF='Inline2' url='"a2Outb.x3d"'></inline>
+        <inline DEF='Inline3' url='"a3Lobby1.x3d"'></inline>
+        <inline DEF='Inline4' url='"a4Lobby2.x3d"'></inline>
+        <inline DEF='Inline5' url='"a5Kiosk-TheFBXSC.x3d"'></inline>
+        <inline DEF='Inline6' url='"a6Pool-Performance.x3d"'></inline>
+        <inline DEF='Inline7' url='"a7PerformanceFBXASC.x3d"'></inline>
+        <inline DEF='Inline8' url='"a8Master-Create-Lab-News-Upper.x3d"'></inline>
+        <inline DEF='Inline9' url='"a9Upper-SandChair1.x3d"'></inline>
+        <inline DEF='Inline10' url='"a10SandChair2.x3d"'></inline>
+        <inline DEF='Inline11' url='"a11SandTable-Couch-Desk12.x3d"'></inline>
+        <inline DEF='Inline12' url='"a12SandDesk3.x3d"'></inline>
+        <inline DEF='Inline13' url='"a13SandCorner-White-Doors.x3d"'></inline>
+        <inline DEF='Inline14' url='"a14SandDoors-Lights.x3d"'></inline>
+        <inline DEF='Inline15' url='"a15SandboxRoom-Hallway.x3d"'></inline>
+        <inline DEF='Inline16' url='"a16LearnObservTable-RoomAcces.x3d"'></inline>
+        <inline DEF='Inline17' url='"a17LearnObservMonit-WhiteBoar-Door.x3d"'></inline>
+        <inline DEF='Inline18' url='"a18LearnObserv-Chairs1.x3d"'></inline>
+        <inline DEF='Inline19' url='"a19LearnObserv-Chairs2.x3d"'></inline>
+        <inline DEF='Inline20' url='"a20LearnObserv-Monitors.x3d"'></inline>
+        <inline DEF='Inline21' url='"a21LearnPref.x3d"'></inline>
+        <inline DEF='Inline22' url='"a22LearningLab1.x3d"'></inline>
+        <inline DEF='Inline23' url='"a23LearningLab2-Tables1.x3d"'></inline>
+        <inline DEF='Inline24' url='"a24LearningLab2-Tables2-Stools.x3d"'></inline>
+        <inline DEF='Inline25' url='"a25LearningLab2-Tables2-Chairs1.x3d"'></inline>
+        <inline DEF='Inline26' url='"a26LearningLab2-Tables2-Chairs2.x3d"'></inline>
+        <inline DEF='Inline27' url='"a27LearningLab2-ProjectsDoorsWhite-Tablets.x3d"'></inline>
+        <inline DEF='Inline28' url='"a28StillNOrgan-Unassign-Signs-Doors1.x3d"'></inline>
+        <inline DEF='Inline29' url='"a29StillNOrgan-UnassignDoors2.x3d"'></inline>
+        <inline DEF='Inline30' url='"a30LearningLabHallSigns-FromRevised2maya.x3d"'></inline>
+        <inline DEF='Inline1' url='"a1Main.x3d"'></inline>
+        <inline DEF='Inline31' url='"avatar.x3d"'></inline>
+      </scene>
+    </x3d>
+  </body>
+</html>
