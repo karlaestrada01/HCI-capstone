@@ -46,6 +46,26 @@ img{
     
     
 }
+.homeTitle{
+    
+    width: 100%;
+    border: 5px solid rgb(117, 120, 123);
+    background-color:rgb(117, 120, 123);
+    padding: 10px;
+   
+    font-family: gineso-condensed;
+    color: white;
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+
+    
+    
+}
 
 div#project
 {
@@ -76,6 +96,10 @@ div#project
     margin-right: auto;
   
     
+}
+.homeBody{
+    font-family: gineso-condensed;
+    color: rgb(232, 119, 34);
 }
 h2{
     color:rgb(134,31,65);
