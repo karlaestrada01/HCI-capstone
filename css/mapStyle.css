@@ -1,0 +1,11 @@
+@font-face{
+    font-family: gineso-condensed;
+    src: local("Gineso Cond Medium"),
+    url(GinesoCondMedium.otf);
+    font-weight: bold;
+}
+.mapTitle{
+    font-family: gineso-condensed;
+    color: rgb(232, 119, 34);
+    
+}
