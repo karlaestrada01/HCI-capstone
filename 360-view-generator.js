@@ -1,6 +1,5 @@
-export function create360Viewer(elementId, filePath)
-{
-    pannellum.viewer(elementId, {
+export function create360Viewer(elementId, filePath) {
+    let viewer = pannellum.viewer(elementId, {
         "type": "equirectangular",
         "panorama": filePath,
         "autoLoad": true,
@@ -15,6 +14,40 @@ export function create360Viewer(elementId, filePath)
         // ],
         "showControls": false
     });
+
+    let gyroscope = new Gyroscope({ frequency: 60 });
+
+    gyroscope.addEventListener('reading', e => {
+        let orientation = screen.orientation;
+
+        if (orientation.type == "landscape-primary")
+        {
+            viewer.setPitch(viewer.getPitch() - (gyroscope.y), false);
+            viewer.setYaw(viewer.getYaw() - (gyroscope.x), false);
+        } 
+        else if (orientation.type == "landscape-secondary")
+        {
+            viewer.setPitch(viewer.getPitch() + (gyroscope.y), false);
+            viewer.setYaw(viewer.getYaw() + (gyroscope.x), false);
+        }
+        else if (orientation.type == "portrait-primary") 
+        {
+            
+            viewer.setPitch(viewer.getPitch() + (gyroscope.x), false);
+            viewer.setYaw(viewer.getYaw() - (gyroscope.y), false);
+        }
+        else if (orientation.type == "portrait-secondary")
+        {
+            viewer.setPitch(viewer.getPitch() - (gyroscope.x), false);
+            viewer.setYaw(viewer.getYaw() + (gyroscope.y), false);
+        }
+
+        // $("#x").text("Angular velocity along the X-axis " + gyroscope.x);
+        // $("#y").text("Angular velocity along the Y-axis " + gyroscope.y);
+        // $("#z").text("Angular velocity along the Z-axis " + gyroscope.z);
+        // $("#orientation").text(screen.orientation.type);
+    });
+    gyroscope.start();
 }
 // Hot spot creation function
 function hotspot(hotSpotDiv, args) {

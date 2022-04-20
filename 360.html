@@ -8,93 +8,29 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/x3dom.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    
     <!-- using API found here: https://pannellum.org/ -->
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    <script src="./360-view-generator.js"></script>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
-    <style>
-        #panorama {
-            position: fixed;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            /* width: 100vw;
-            height: 100vh; */
-            z-index: -1;
-        }
-        .custom-hotspot {
-        height: 50px;
-        width: 50px;
-        background: #f00;
-    }
-    div.custom-tooltip span {
-        visibility: hidden;
-        position: absolute;
-        border-radius: 3px;
-        background-color: #fff;
-        color: #000;
-        text-align: center;
-        max-width: 200px;
-        padding: 5px 10px;
-        margin-left: -220px;
-        cursor: default;
-    }
-    div.custom-tooltip:hover span{
-        visibility: visible;
-    }
-    div.custom-tooltip:hover span:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-width: 10px;
-        border-style: solid;
-        border-color: #fff transparent transparent transparent;
-        bottom: -20px;
-        left: -10px;
-        margin: 0 50%;
-    }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    
+    <!-- 360 View -->
+    <script type="module" src="./cube-360-view.js"></script>
+    <link rel="stylesheet" href="css/360ViewerStyle.css">
+
 </head>
-
 <body>
+    <p id="x">x</p>
+    <p id="y">y</p>
+    <p id="z">z</p>
+    <p id="abs">abs</p>
+    <p id="alpha">alpha</p>
+    <p id="beta">beta</p>
+    <p id="gamma">gamma</p>
+    <p id="orientation">orientation</p>
     <div class="container">
-        <p>This is the page for the Cube studio.</p>
-        <div id="panorama"></div>
-        <script>
-            
-            create360Viewer("panorama", "/images/pano_Cube_mono_CycFlown.jpg");
-            // pannellum.viewer('panorama', {
-            //     "type": "equirectangular",
-            //     "panorama": "/images/pano_Cube_mono_CycFlown.jpg",
-            //     "autoLoad": true,
-            //     "hotSpots": [
-            //         {
-            //             "pitch": 14.1,
-            //             "yaw": 1.5,
-            //             "cssClass": "custom-hotspot",
-            //             "createTooltipFunc": hotspot,
-            //             "createTooltipArgs": "Baltimore Museum of Art"
-            //         }
-            //     ],
-            //     "showControls": false
-            // });
-
-            // // Hot spot creation function
-            // function hotspot(hotSpotDiv, args) {
-            //     hotSpotDiv.classList.add('custom-tooltip');
-            //     var span = document.createElement('span');
-            //     span.innerHTML = args;
-            //     hotSpotDiv.appendChild(span);
-            //     span.style.width = span.scrollWidth - 20 + 'px';
-            //     span.style.marginLeft = -(span.scrollWidth - hotSpotDiv.offsetWidth) / 2 + 'px';
-            //     span.style.marginTop = -span.scrollHeight - 12 + 'px';
-            // }
-        </script>
+        <div id="viewer"></div>
     </div>
 </body>
 
