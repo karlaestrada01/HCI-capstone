@@ -9,3 +9,26 @@
     color: rgb(232, 119, 34);
     
 }
+#home{
+    color: white;
+    width: 100%;
+    font-family: gineso-condensed;
+    font-size: larger;
+    background-color: rgb(134,31,65);;
+}
+#myCube{
+    color: white;
+    width: 50%;
+    font-family: gineso-condensed;
+    font-size: larger;
+    float:left;
+    background-color: rgb(134,31,65);;
+}
+#myCreate{
+    color: white;
+    width: 50%;
+    float: right;
+    font-family: gineso-condensed;
+    font-size: larger;
+    background-color: rgb(134,31,65);;
+}

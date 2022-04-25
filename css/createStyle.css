@@ -40,9 +40,21 @@ img{
     display: flex;
     justify-content: center;
    
-
+}
+#home{
+    color: white;
+    width: 100%;
+    font-family: gineso-condensed;
+    font-size: larger;
+    background-color: rgb(134,31,65);;
+}
+#map{
+    color: white;
+    width: 100%;
+    font-size: larger;
     
-    
+    font-family: gineso-condensed;
+    background-color: rgb(134,31,65);;
 }
 
 
