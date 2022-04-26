@@ -18,7 +18,15 @@
 }
 #myCube{
     color: white;
-    width: 50%;
+    width: 33.3333333333%;
+    font-family: gineso-condensed;
+    font-size: larger;
+    float:left;
+    background-color: rgb(134,31,65);;
+}
+#mySandbox{
+    color: white;
+    width: 33.3333333333%;
     font-family: gineso-condensed;
     font-size: larger;
     float:left;
@@ -26,7 +34,34 @@
 }
 #myCreate{
     color: white;
-    width: 50%;
+    width: 33.3333333333%;
+    float: right;
+    font-family: gineso-condensed;
+    font-size: larger;
+    background-color: rgb(134,31,65);;
+}
+
+#myLearnObserve{
+    color: white;
+    width: 33.3333333333%;
+    float: right;
+    font-family: gineso-condensed;
+    font-size: larger;
+    background-color: rgb(134,31,65);;
+}
+
+#myPerform{
+    color: white;
+    width: 33.3333333333%;
+    float: right;
+    font-family: gineso-condensed;
+    font-size: larger;
+    background-color: rgb(134,31,65);;
+}
+
+#myExperience{
+    color: white;
+    width: 33.3333333333%;
     float: right;
     font-family: gineso-condensed;
     font-size: larger;
