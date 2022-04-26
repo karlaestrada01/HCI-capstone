@@ -1,4 +1,4 @@
-export function create360Viewer(elementId, filePath) {
+export function create360Viewer(elementId, filePath, title = "") {
     let viewer = pannellum.viewer(elementId, {
         "type": "equirectangular",
         "panorama": filePath,
@@ -12,7 +12,8 @@ export function create360Viewer(elementId, filePath) {
         //         "createTooltipArgs": "Baltimore Museum of Art"
         //     }
         // ],
-        "showControls": false
+        "showControls": false,
+        "title": title
     });
 
     let gyroscope = new Gyroscope({ frequency: 60 });
@@ -48,6 +49,14 @@ export function create360Viewer(elementId, filePath) {
         // $("#orientation").text(screen.orientation.type);
     });
     gyroscope.start();
+
+    $("#info-button").on("click", function() {
+        $("#information-container").removeClass("hidden");
+    });
+
+    $("#back-button").on("click", function() {
+        $("#information-container").addClass("hidden");
+    });
 }
 // Hot spot creation function
 function hotspot(hotSpotDiv, args) {

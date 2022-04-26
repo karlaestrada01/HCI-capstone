@@ -1,11 +1,11 @@
 #viewer {
     position: absolute;
-    top: 500px;
+    top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
     /* width: 100vw;*/
-    height: 1000px;
+    height: 100%;
     z-index: -1;
 }
 #viewer img {

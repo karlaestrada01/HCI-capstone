@@ -26,6 +26,11 @@ img{
   
 }
 
+.hidden
+{
+    display: none;
+}
+
 .studioHeader .cubeTitle{
     
     width: 100%;
@@ -77,7 +82,7 @@ div#project
     top: 0;
     left: 0;
     width:600px;
-    height:350px;
+    height:600px;
     overflow:hidden;     /* if you don't want a scrollbar, set to hidden */
     overflow-x:hidden;   /* hides horizontal scrollbar on newer browsers */
     margin-left: auto;
@@ -138,4 +143,54 @@ body
     
     font-family: gineso-condensed;
     background-color: rgb(134,31,65);;
+}
+
+#information-container
+{
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+#back-button
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(193, 193, 193);
+    font-size: 30px;
+}
+
+#back-button:hover
+{
+    background-color: rgb(214, 214, 214);
+}
+
+#info-button
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    width: 70px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(193, 193, 193);
+    font-size: 30px;
+}
+
+#info-button:hover
+{
+    background-color: rgb(214, 214, 214);
 }

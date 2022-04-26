@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/createStyle.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="create.js"></script>
 
     <!-- using API found here: https://pannellum.org/ -->
     <!-- Latest compiled and minified JavaScript -->
@@ -19,31 +22,38 @@
 </head>
 
 <body>
-    <div class="headerImage">
-        <img src="Horizontal_VT_Full_Color_RGB.jpg" alt="Virginia Tech Logo"> </img>
+    <div id="information-container" class="hidden">
 
-    </div>
-    <div class="group">
-        <div class="container">
-            <div class="studioHeader">
-                <h1 class="createTitle">Create Studio</h1>
+        <button id="back-button">
+            Back
+        </button>
+        <div class="headerImage">
+            <img src="Horizontal_VT_Full_Color_RGB.jpg" alt="Virginia Tech Logo"> </img>
+
+        </div>
+        <div class="group">
+            <div class="container">
+                <div class="studioHeader">
+                    <h1 class="createTitle">Create Studio</h1>
+
+                </div>
+
+                <div class=projHeader>
+                    <a href="./index.html" target="_blank">
+                        <button id = "home">Home Page</button>
+                    </a>
+
+                    <a href="./map.html" target="_blank">
+                        <button id = "map">Map</button>
+                    </a>
+                </div>
 
             </div>
-
-            <div class=projHeader>
-                <a href="./index.html" target="_blank">
-                    <button id = "home">Home Page</button>
-                </a>
-
-                <a href="./map.html" target="_blank">
-                    <button id = "map">Map</button>
-                </a>
-            </div>
-
         </div>
     </div>
     <div id="viewer">
         <img src="./images/create-studio.jpg">
+        <button id="info-button">Info</button>
     </div>
 </body>
 
