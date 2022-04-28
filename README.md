@@ -11,6 +11,10 @@ The following website appears when a QR code which is located in Moss Arts Cente
 
 Marty Hanapole, Karla Estrada, Dana Altarace, Hansika Shah
 
+# Live Website
+
+https://mhanapole.github.io/HCI-Capstone-ICAT-Studio-Tour/
+
 
 # Sandbox
 ![sandbox (1)](https://user-images.githubusercontent.com/55094600/165791116-9f63518c-6a1a-40f0-bbfb-9b8def70ed94.png)
