@@ -1,4 +1,6 @@
-# HCI-Capstone-ICAT-Studio-Tour
+# ICAT Virtual Open House
+
+
 Challenge: To allow visitors to the Moss Arts Center to “see inside” the ICAT studios to understand the interdisciplinary research that goes on there.     
 
 User Goals:  
@@ -9,3 +11,6 @@ User Goals:
 - Deploy the interface for visitors during a Moss Arts Center event and gather feedback    
 
 Audience:  General public
+
+
+
