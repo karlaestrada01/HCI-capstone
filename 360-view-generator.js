@@ -16,6 +16,14 @@ export function create360Viewer(elementId, filePath, title = "") {
         "title": title
     });
 
+    $("#info-button").on("click", function() {
+        $("#information-container").removeClass("hidden");
+    });
+
+    $("#back-button").on("click", function() {
+        $("#information-container").addClass("hidden");
+    });
+
     let gyroscope = new Gyroscope({ frequency: 60 });
 
     gyroscope.addEventListener('reading', e => {
@@ -50,13 +58,7 @@ export function create360Viewer(elementId, filePath, title = "") {
     });
     gyroscope.start();
 
-    $("#info-button").on("click", function() {
-        $("#information-container").removeClass("hidden");
-    });
-
-    $("#back-button").on("click", function() {
-        $("#information-container").addClass("hidden");
-    });
+    
 }
 // Hot spot creation function
 function hotspot(hotSpotDiv, args) {
